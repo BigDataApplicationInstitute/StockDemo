@@ -1,11 +1,13 @@
 # StockDemo
 
-
-[cloudera@quickstart Stock]$ hadoop  fs -mkdir /user/cloudera/stock/
+```
+[cloudera@quickstart Stock]$ hadoop  fs -mkdir /user/cloudera/stock/ 
 [cloudera@quickstart Stock]$ hadoop  fs -mkdir /user/cloudera/stock/input
 [cloudera@quickstart Stock]$ hadoop fs -put stock /user/cloudera/stock/input/1
 [cloudera@quickstart Stock]$ hadoop  fs -mkdir /user/cloudera/stock/output
 [cloudera@quickstart Stock]$ hadoop jar target/Stock-0.0.1-SNAPSHOT.jar Demo.StockPrice /user/cloudera/stock/input/1 /user/cloudera/stock/output/1
+```
+```
 15/11/16 23:50:11 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
 15/11/16 23:50:11 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
 15/11/16 23:50:12 INFO input.FileInputFormat: Total input paths to process : 1
@@ -75,9 +77,14 @@
 		Bytes Read=351
 	File Output Format Counters 
 		Bytes Written=40
+```
+
+```
 [cloudera@quickstart Stock]$ hadoop  fs -cat /user/cloudera/stock/output/1/*
 Baba	89
 Goog	646
 Tsla	298
 VZ	52
 Yhoo	48
+
+```
