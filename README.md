@@ -1,6 +1,8 @@
 # StockDemo
 
 ```
+[cloudera@quickstart Stock]$ mvn clean
+[cloudera@quickstart Stock]$ mvn package
 [cloudera@quickstart Stock]$ hadoop  fs -mkdir /user/cloudera/stock/ 
 [cloudera@quickstart Stock]$ hadoop  fs -mkdir /user/cloudera/stock/input
 [cloudera@quickstart Stock]$ hadoop fs -put stock /user/cloudera/stock/input/1
