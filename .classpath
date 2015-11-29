@@ -16,5 +16,28 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-ant-2.6.0-mr1-cdh5.4.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-ant-mr1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-core-2.6.0-mr1-cdh5.4.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-core-mr1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-examples.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-examples-2.6.0-mr1-cdh5.4.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-examples-mr1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-test-2.6.0-mr1-cdh5.4.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-test-mr1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-tools-2.6.0-mr1-cdh5.4.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-tools-mr1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-annotations.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-annotations-2.6.0-cdh5.4.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-auth.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-auth-2.6.0-cdh5.4.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-aws.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-aws-2.6.0-cdh5.4.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-common.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-common-2.6.0-cdh5.4.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-common-2.6.0-cdh5.4.2-tests.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-common-tests.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-nfs.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-nfs-2.6.0-cdh5.4.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

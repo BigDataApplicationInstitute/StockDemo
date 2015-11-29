@@ -1,7 +1,7 @@
 package Demo;
 
 import java.io.IOException;
-import org.apache.hadoop.conf.Configuration;
+
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
@@ -31,22 +31,32 @@ public class StockPrice {
 
 			public void reduce(Text key, Iterable<IntWritable> values,Context context) throws IOException, InterruptedException {
 
-			int maxValue = Integer.MIN_VALUE;
-
-			//Looping and calculating Max for each year
-			for (IntWritable val : values) {
-				maxValue = Math.max(maxValue, val.get());
+				int maxValue = Integer.MIN_VALUE;
+				int sum = 0;
+				int avg = 0, count = 0;
+				//Looping and calculating Max for each year
+				for (IntWritable val : values) {
+					maxValue = Math.max(maxValue, val.get());
+					//sum += val.get();
+					//count++;
 				}
-
-			context.write(key, new IntWritable(maxValue));
+				//avg = sum / count;
+				context.write(key, new IntWritable(maxValue));
 			}
 		}
 
 		public static void main(String[] args) throws Exception {
+			// for running on cluster
+			//Configuration conf = new Configuration();
+			//Job job = Job.getInstance(conf, "Stock Price");
+			
+			args[0] = "/home/cloudera/workspace/Stock/stock";
+			args[1] = "/home/cloudera/workspace/Stock/output/output1.txt";
 
-			Configuration conf = new Configuration();
-
-			Job job = new Job(conf, "StockPrice");
+			
+			Job job = new Job();
+			job.setJobName("StockPrice");
+			
 			job.setJarByClass(StockPrice.class);
 
 			job.setMapOutputKeyClass(Text.class);
